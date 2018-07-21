@@ -1,0 +1,85 @@
+{
+	"name": "Brooklyn",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"ios": "react-native run-ios",
+		"android": "react-native run-android",
+		"and": "react-native run-android",
+		"storybook": "bash ./scripts/storybook-init.sh",
+		"precommit": "pretty-quick --staged",
+		"prettier-watch": "onchange '**/*.{tsx,ts}' -- prettier --write {{changed}}"
+	},
+	"dependencies": {
+		"@types/react-native-vector-icons": "^4.6.1",
+		"@types/react-navigation": "^2.0.8",
+		"@types/react-redux": "^6.0.3",
+		"@types/redux-logger": "^3.0.6",
+		"appcenter": "^1.5.1",
+		"appcenter-analytics": "^1.5.1",
+		"appcenter-crashes": "^1.5.1",
+		"eslint": "^4.19.1",
+		"react": "16.3.1",
+		"react-native": "0.55.4",
+		"react-native-elements": "^0.19.1",
+		"react-native-google-analytics-bridge": "^5.8.0",
+		"react-native-localization": "^1.0.10",
+		"react-native-vector-icons": "^4.6.0",
+		"react-navigation": "^2.2.5",
+		"react-navigation-redux-helpers": "^2.0.2",
+		"react-redux": "^5.0.7",
+		"reactotron-react-native": "^1.14.0",
+		"redux": "^4.0.0",
+		"redux-thunk": "^2.3.0",
+		"tslib": "^1.9.2"
+	},
+	"devDependencies": {
+		"@storybook/addon-actions": "^3.4.7",
+		"@storybook/addon-knobs": "^3.4.7",
+		"@storybook/addons": "^3.4.7",
+		"@storybook/cli": "^3.4.7",
+		"@storybook/react-native": "^3.4.7",
+		"@types/storybook__addon-actions": "^3.0.3",
+		"@types/storybook__react-native": "^3.0.0",
+		"@types/react": "^16.4.2",
+		"@types/react-native": "^0.55.17",
+		"@types/react-native-elements": "^0.18.0",
+		"babel-core": "^6.26.3",
+		"babel-jest": "23.0.1",
+		"babel-preset-react-native": "4.0.0",
+		"babel-runtime": "^6.26.0",
+		"eslint": "^4.19.1",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.6.0",
+		"husky": "^0.14.3",
+		"ios-sim": "^7.0.0",
+		"jest": "23.1.0",
+		"prettier": "^1.13.5",
+		"pretty-quick": "^1.6.0",
+		"prop-types": "^15.6.1",
+		"react-dom": "16.3.1",
+		"react-native-dotenv": "^0.1.1",
+		"react-native-typescript-transformer": "^1.2.9",
+		"react-test-renderer": "16.3.1",
+		"redux-logger": "^3.0.6",
+		"tslint": "^5.10.0",
+		"tslint-config-prettier": "^1.13.0",
+		"tslint-react": "^3.6.0",
+		"typescript": "^2.9.1"
+	},
+	"jest": {
+		"preset": "react-native",
+		"setupFiles": [
+			"./node_modules/appcenter/test/AppCenterMock.js",
+			"./node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
+			"./node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
+		]
+	},
+	"rnpm": {
+		"assets": [
+			"assets/fonts"
+		]
+	}
+}

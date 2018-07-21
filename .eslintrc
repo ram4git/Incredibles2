@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "prettier",
+        "react-native",
+        "react"
+    ],
+    "rules": {
+        "prettier/prettier": ["error", {
+            "singleQuote": true
+        }],
+        "no-unused-styles": true,
+        "quotes": ["error", "single"],
+        "jsx-quotes": ["error", "single"],
+        "jsx-no-lambda": false
+    },
+    "extends": [
+        "plugin:react-native/all"
+    ]
+}
